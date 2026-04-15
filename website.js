@@ -672,7 +672,7 @@ class ChatApp {
     );
 
     // WebSocket
-    this.ws = new WebSocket("ws://localhost:6790");
+    this.ws = new WebSocket("wss://monologue-astronaut-headrest.ngrok-free.app");
     this._bindWebSocket();
 
     // Chat controls
