@@ -10,8 +10,6 @@ class FriendManager:
         # friendships[name] = set of friend names (mutual, stored on both sides)
         self.friendships: dict[str, set[str]] = {}
 
-    # ── Requests ──────────────────────────────────────────────────────────────
-
     def send_request(self, from_name: str, to_name: str) -> str | None:
         """Record a pending request. Returns an error string or None on success."""
         if from_name == to_name:
